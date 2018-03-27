@@ -134,7 +134,7 @@
 <smd name="P$8" x="0" y="6.19" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
 <smd name="P$7" x="0" y="7.46" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
 <smd name="P$6" x="0" y="8.73" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="3.3V" x="0" y="10" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="VDD" x="0" y="10" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
 <smd name="P$5" x="0" y="11.27" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
 <smd name="P$4" x="0" y="12.54" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
 <smd name="P$3" x="0" y="13.81" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
@@ -196,7 +196,7 @@
 <pin name="P$44" x="-27.94" y="-17.78" length="middle"/>
 <pin name="P$45" x="-27.94" y="-20.32" length="middle"/>
 <pin name="P$46" x="-27.94" y="-22.86" length="middle"/>
-<pin name="3.3V" x="0" y="-40.64" length="middle" rot="R90"/>
+<pin name="VDD_FLASH" x="0" y="-40.64" length="middle" rot="R90"/>
 <pin name="RX+" x="27.94" y="-27.94" length="middle" rot="R180"/>
 <pin name="TX-" x="27.94" y="-20.32" length="middle" rot="R180"/>
 <pin name="RST" x="-27.94" y="17.78" length="middle"/>
@@ -223,7 +223,6 @@
 <devices>
 <device name="" package="OEMGA2SP">
 <connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
 <connect gate="G$1" pin="3.3V2" pad="3.3V2"/>
 <connect gate="G$1" pin="3.3V3" pad="3.3V3"/>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
@@ -286,6 +285,7 @@
 <connect gate="G$1" pin="TX-" pad="TX-"/>
 <connect gate="G$1" pin="TX2+" pad="TX2+"/>
 <connect gate="G$1" pin="TX2-" pad="TX2-"/>
+<connect gate="G$1" pin="VDD_FLASH" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
